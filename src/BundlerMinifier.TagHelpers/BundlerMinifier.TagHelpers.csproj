@@ -1,14 +1,14 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFrameworks>netstandard2.0;netcoreapp3.0;netcoreapp3.1</TargetFrameworks>
+    <TargetFrameworks>netstandard2.0;net8.0;net9.0;net10.0</TargetFrameworks>
     
-    <Authors>Gérald Barré, Mads Kristensen, RockstarDev</Authors>
+    <Authors>Gérald Barré, Mads Kristensen, RockstarDev; Zoltan Juhasz</Authors>
     <Product>Bundler &amp; Minifier TagHelpers</Product>
-    <PackageLicenseUrl>https://github.com/madskristensen/BundlerMinifier/blob/master/LICENSE</PackageLicenseUrl>
-    <Copyright>Copyright © 2018</Copyright>
-    <PackageIconUrl>https://raw.githubusercontent.com/madskristensen/BundlerMinifier/master/src/BundlerMinifierVsix/Resources/icon.png</PackageIconUrl>
-    <RepositoryUrl>https://github.com/madskristensen/BundlerMinifier</RepositoryUrl>
+    <PackageLicenseUrl>https://github.com/JZO001/BundlerMinifier/blob/master/LICENSE</PackageLicenseUrl>
+    <Copyright>Copyright © 2018-2025</Copyright>
+    <PackageIconUrl>https://raw.githubusercontent.com/JZO001/BundlerMinifier/master/src/BundlerMinifierVsix/Resources/icon.png</PackageIconUrl>
+    <RepositoryUrl>https://github.com/JZO001/BundlerMinifier</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
     <PackageTags>concat;bundle;minify;minification;css;js;html;aspnet;netcore</PackageTags>
     <!-- forces SDK to copy dependencies into build output to make packing easier -->
@@ -20,13 +20,15 @@
 
   <ItemGroup>
     <PackageReference Include="Microsoft.SourceLink.GitHub" Version="1.0.0" PrivateAssets="All" />
+    <PackageReference Include="NUglify" Version="1.21.17" />
   </ItemGroup>
 
   <ItemGroup Condition="'$(TargetFramework)' != 'netstandard2.0'">
     <FrameworkReference Include="Microsoft.AspNetCore.App" />
   </ItemGroup>
   <ItemGroup Condition="'$(TargetFramework)' == 'netstandard2.0'">
-    <PackageReference Include="Microsoft.AspNetCore.Mvc.TagHelpers" Version="2.0.4" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.TagHelpers" Version="2.3.0" />
+    <PackageReference Include="System.Text.RegularExpressions" Version="4.3.1" />
   </ItemGroup>
 
   <ItemGroup>

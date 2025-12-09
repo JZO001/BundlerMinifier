@@ -3,7 +3,7 @@
 A Visual Studio extension that let's you configure bundling and
 minification of JS, CSS and HTML files.
 
-[![Build status](https://ci.appveyor.com/api/projects/status/ktn1qy982qsprwb5?svg=true)](https://ci.appveyor.com/project/madskristensen/bundlerminifier)
+[![Build status](https://ci.appveyor.com/api/projects/status/ktn1qy982qsprwb5?svg=true)](https://ci.appveyor.com/project/JZO001/bundlerminifier)
 [![NuGet](https://img.shields.io/nuget/v/BuildBundlerMinifier.svg?style=flat)](https://www.nuget.org/packages/BuildBundlerMinifier/) 
 
 Download the extension at the
@@ -15,8 +15,8 @@ or get the
 
 See the
 [changelog](CHANGELOG.md)
-for changes and roadmap and the 
-[wiki](https://github.com/madskristensen/BundlerMinifier/wiki)
+for changes and roadmap and the
+[wiki](https://github.com/JZO001/BundlerMinifier/wiki)
 for more details.
 
 ## Features
