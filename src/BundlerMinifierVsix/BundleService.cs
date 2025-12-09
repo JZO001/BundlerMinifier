@@ -6,8 +6,6 @@ using System.Text;
 using System.Threading;
 using BundlerMinifier;
 using EnvDTE80;
-using Microsoft.VisualStudio.Shell;
-using Microsoft.VisualStudio.Shell.Interop;
 
 namespace BundlerMinifierVsix
 {

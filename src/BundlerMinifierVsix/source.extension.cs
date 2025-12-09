@@ -7,12 +7,12 @@ namespace BundlerMinifierVsix
 {
     static class Vsix
     {
-        public const string Id = "5783ce1f-b23d-4e84-87a4-6b2cbe9e0602";
+        public const string Id = "8a5fff75-6652-4d3d-be1a-d135ff5ba67a";
         public const string Name = "Bundler & Minifier";
         public const string Description = @"Adds support for bundling and minifying JavaScript, CSS and HTML files in any project.";
         public const string Language = "en-US";
-        public const string Version = "3.4";
-        public const string Author = "Jason Moore";
+        public const string Version = "4.0";
+        public const string Author = "Zoltan Juhasz";
         public const string Tags = "bundle, bundling, minify, minification, js, css, html";
     }
 }

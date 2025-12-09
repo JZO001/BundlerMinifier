@@ -12,8 +12,8 @@ namespace BundlerMinifierVsix
     /// </summary>
     internal sealed partial class PackageGuids
     {
-        public const string guidBundlerPackageString = "c7347762-e60a-4407-bb9d-d76fc1fe09b5";
-        public const string guidBundlerCmdSetString = "7b10be0c-81e1-4817-abda-e08788679bd5";
+        public const string guidBundlerPackageString = "a657a4ae-d749-4a3a-a766-74c52bf78e8b";
+        public const string guidBundlerCmdSetString = "c60d2f94-280e-4165-afa9-f65d483a6ac0";
         public static Guid guidBundlerPackage = new Guid(guidBundlerPackageString);
         public static Guid guidBundlerCmdSet = new Guid(guidBundlerCmdSetString);
     }
