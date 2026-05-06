@@ -7,7 +7,7 @@
     <Title>Bundler &amp; Minifier (Forge version)</Title>
     <PackageId>Forge.BuildBundlerMinifier</PackageId>
 
-    <Version>4.0.1</Version>
+    <Version>4.0.2</Version>
     <AssemblyOriginatorKeyFile>..\..\..\..\..\TFS\Forge\.Documents\Forge.pfx</AssemblyOriginatorKeyFile>
     <SignAssembly>true</SignAssembly>
     <ProjectGuid>{9C5B1218-32D8-41DA-954C-62B1D3CCA096}</ProjectGuid>
