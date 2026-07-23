@@ -7,11 +7,10 @@
     <Title>Bundler &amp; Minifier (Forge version)</Title>
     <PackageId>Forge.BuildBundlerMinifier</PackageId>
 
-    <Version>4.0.2</Version>
+    <Version>4.0.3</Version>
     <AssemblyOriginatorKeyFile>..\..\..\..\..\TFS\Forge\.Documents\Forge.pfx</AssemblyOriginatorKeyFile>
     <SignAssembly>true</SignAssembly>
     <ProjectGuid>{9C5B1218-32D8-41DA-954C-62B1D3CCA096}</ProjectGuid>
-    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
 
     <BuildOutputTargetFolder>tools</BuildOutputTargetFolder>
     <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
@@ -27,6 +26,10 @@
     <SymbolPackageFormat>snupkg</SymbolPackageFormat>
   </PropertyGroup>
 
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'">
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+  </PropertyGroup>
+
   <ItemGroup>
     <PackageReference Include="Microsoft.SourceLink.GitHub" Version="1.0.0" PrivateAssets="All" />
   </ItemGroup>
@@ -35,7 +38,7 @@
     <PackageReference Include="Microsoft.Build.Framework" Version="18.0.2" PrivateAssets="All" />
     <PackageReference Include="Microsoft.Build.Utilities.Core" Version="18.0.2" PrivateAssets="All" />
     <PackageReference Include="Newtonsoft.Json" Version="13.0.4" PrivateAssets="All" />
-    <PackageReference Include="NUglify" Version="1.21.17" PrivateAssets="All" />
+    <PackageReference Include="NUglify" Version="1.22.0" PrivateAssets="All" />
   </ItemGroup>
 
   <ItemGroup Condition="'$(TargetFramework)' == 'netstandard2.0'">
